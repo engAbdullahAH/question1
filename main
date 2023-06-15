@@ -1,0 +1,114 @@
+package question1
+
+import.util.Scanner;
+public class Question1{
+
+public static void main(String [] args){
+Scanner emp=new Sanner(System.in);
+
+double result;
+String full=" full time employees";
+String half=" half time employees";
+
+String name;
+String position;
+double salary ;
+int experien;
+String eduLevel;
+
+
+System.out.println("enter the name of employee");
+name=emp.next();
+System.out.println("enter the position of employee);
+position=emp.next();
+System.out.println("enter the salary of employee");
+salary=emp.nextInt();
+System.out.println("enter the experience years of employee");
+experien=emp.nextint();
+System.out.println("enter the eduLevel of employee");
+eduLevel=emp.nextint();
+
+System.out.println("is he full time or half time");
+String timeT=emp.nextint();
+
+
+Employee em=new Employ(name,position,salary,experien,eduLevel);
+
+int bonus=0;
+
+
+double fullT=0;
+double halfT=0;
+
+if(timeT=="full time" )
+fullT=getSalary()*3%;
+if(timeT=="half time" )
+halfT=getSalary()*1.5%;
+else;
+
+
+if(eduLevel=="Bachelor"){
+bonus+500=bonus;
+}
+elseif(eduLevel=="Doploma"){
+bonus+250=bonus;
+}
+else 
+bonus=0;
+
+
+result=em.getSalary()+em.getSalary()*5%*em.getexper()+bonus+fullT+halfT ;
+System.out.println("the employee "+ name +" takes"+result+" as a"+timeT);
+
+}
+}
+
+
+
+class Employee{
+private String name=null;
+private String position=low;
+private double salary= 0 ;
+private int experien=0 ;
+private String eduLevel=null;
+
+public Employee(String name,String position=low ,double salary , int experien, String eduLevel){
+Employee(this);
+this.name=name;
+this.position=position;
+this.salary= salary ;
+this.experien=experien;
+this.eduLevel=eduLevel;
+}
+
+public double setSalary(double sal){
+this.salary=sal;
+}
+public int setexper(String exp){
+this.experien=experien;
+}
+
+public double getSalary(){
+return this.salary=sal;
+}
+public int getexper(){
+return this.experien;
+}
+
+
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+}

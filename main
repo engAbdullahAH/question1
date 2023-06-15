@@ -1,4 +1,4 @@
-package question1
+package question1;
 
 import.util.Scanner;
 public class Question1{
@@ -28,7 +28,7 @@ experien=emp.nextint();
 System.out.println("enter the eduLevel of employee");
 eduLevel=emp.nextint();
 
-System.out.println("is he full time or half time");
+System.out.println("is he full time or half time ?");
 String timeT=emp.nextint();
 
 
